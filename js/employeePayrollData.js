@@ -1,3 +1,4 @@
+//creating employee payroll data class, which has geter and setter for different properties
 class EmployeePayrollData
 {
     //getter and setter for name
@@ -6,7 +7,8 @@ class EmployeePayrollData
     {
         //console.log("Setting: "+name);
         //this._name= name;
-        let nameRegex= RegExp('^[A-Z]{1}[a-z]{2,}$');
+        //regular expression for name
+        let nameRegex= RegExp('^[A-Z]{1}[a-zA-Z ]{2,}$');
         if(nameRegex.test(name))
             this._name=name;
         else throw 'Name is Incorrect!';
